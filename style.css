@@ -207,3 +207,7 @@ footer {
         font-size: 2rem;
     }
 }
+
+.curseur{
+    cursor: pointer
+}
