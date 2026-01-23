@@ -48,10 +48,19 @@ nav ul li a {
     text-transform: uppercase;
     font-size: 0.9rem;
     letter-spacing: 1px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #c0a060;
+    background-color: rgba(192, 160, 96, 0.05);
+}
+
+nav ul li a.active {
+    color: #c0a060;
+    border-bottom: 2px solid #c0a060;
 }
 
 section {
@@ -106,12 +115,16 @@ h2::after {
     background: #fff;
     padding: 1.5rem;
     border-radius: 8px;
-    transition: transform 0.3s;
+    transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid transparent;
 }
 
 .product-item:hover {
     transform: translateY(-10px);
+    background-color: #fffdf9;
+    border-color: #c0a060; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .product-item img {
@@ -128,6 +141,7 @@ h2::after {
 
 .product-item h2::after { display: none; }
 
+/* --- SERVICES ET À PROPOS --- */
 #Services nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -141,6 +155,12 @@ h2::after {
     padding: 1rem 2rem;
     border-radius: 50px;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+#Services li:hover {
+    background: #444;
+    transform: scale(1.05);
 }
 
 .paragraphe {
@@ -171,6 +191,7 @@ h2::after {
     margin-bottom: 1.5rem;
     border: 1px solid #ddd;
     border-radius: 4px;
+    font-family: inherit;
 }
 
 #contact button {
@@ -208,6 +229,6 @@ footer {
     }
 }
 
-.curseur{
-    cursor: pointer
+.curseur {
+    cursor: pointer;
 }
